@@ -24,4 +24,7 @@ USER ${NB_USER}
 #RUN source activate tasho-base
 
 # Make RUN commands use the new environment:
-SHELL ["conda", "run", "-n", "tasho-base", "/bin/bash", "-c"]
+# SHELL ["conda", "run", "-n", "tasho-base", "/bin/bash", "-c"]
+
+ENV PATH /opt/conda/envs/tasho-base/bin:$PATH
+RUN /bin/bash -c "source activate tasho-base"
