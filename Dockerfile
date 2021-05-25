@@ -22,3 +22,6 @@ RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
 
 #RUN source activate tasho-base
+
+# Make RUN commands use the new environment:
+SHELL ["conda", "run", "-n", "tasho-base", "/bin/bash", "-c"]
