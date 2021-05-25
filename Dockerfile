@@ -1,4 +1,4 @@
-FROM alejandroastudillo/tasho-test-gui:42e79dcfb00a
+FROM alejandroastudillo/tasho-test-gui:latest
 
 RUN source activate tasho-base
 
